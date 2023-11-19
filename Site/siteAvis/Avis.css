@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+}
+
+header{
+    background-color:#20333c;
+    min-height: 10vh;
+    max-height: 10vh;
+}
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    font-size: 20px;
+    padding-left: 25vw;
+    padding-right: 25vw; 
+}
+
+
+.cthulhu{
+    width: 15vw;
+    z-index: 1;
+}
+
+a{
+    text-decoration: none;
+    z-index: 1;
+    
+}
+
+h2{
+    color: #bcc4bc;
+    width: 90px;
+}
+
+@font-face {    /*permet d'importer une nouvelle police*/
+    font-family: Inter;
+    src: url(fonts/Inter-Bold.ttf);
+}
+ /*Fin du header*/
+
+
+main{
+    min-height: 20vh;
+    background-color:#bcc4bc ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.middle-txt{
+    color: #20333c;
+    font-size: xx-large;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+.adepte{
+    height: 20vh;
+    width: 70%;
+    background-color: #119484;
+    display: flex;
+    border-radius: 2%;
+
+}
+
+.eveille{
+    height: 20vh;
+    width: 70%;
+    background-color: #0A7052;
+    border-radius: 2%;
+}
+
+.illumine{
+    height: 20vh;
+    width: 70%;
+    background-color: #109458;
+    border-radius: 2%;
+}
+
+.adepte, .eveille, .illumine{
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+article{
+    height: 60vh;
+    background-color: #bcc4bc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+
+footer{
+    height: 10vh;
+    background-color: #bcc4bc;
+}
+
+.avis1{
+    background-color: #0A7052;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 20vh;
+    width: 70vw;
+    padding-top: 1vh;
+    padding-left: 1vw;
+}
+.avis2{
+    background-color: #0A7052;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 20vh;
+    width: 70vw;
+    padding-top: 1vh;
+    padding-left: 1vw;
+}
+.avis3{
+    background-color: #0A7052;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 20vh;
+    width: 70vw;
+    padding-top: 1vh;
+    padding-left: 1vw;
+}
+
+.avis1 img, .avis2 img, .avis3 img {
+    height: 15vh;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .imgback {
+        background-size:cover;
+        background-position: center;
+    }
+
+
+    .cthulhu {
+        width: 50vw;
+    }
+
+    .button {
+        width: 40vw;
+    }
+
+    h2 {
+        text-align: center;
+    }
+    h3 {
+        text-align: center;
+        width:auto;
+        height:auto;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
